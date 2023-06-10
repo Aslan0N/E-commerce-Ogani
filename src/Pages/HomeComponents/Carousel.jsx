@@ -5,11 +5,13 @@ import CarouselData from "../../Data/Carouse.json";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
+
 
 // import "./styles.css";
 
 // import required modules
-import { Navigation } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 
 const Carousel = () => {
   return (
@@ -21,13 +23,13 @@ const Carousel = () => {
           <h4>Latest Products</h4>
             <Swiper
               navigation={false}
-              modules={[Navigation]}
+              modules={[Navigation, Autoplay]}
               className="mySwiper"
               slidesPerView={1}
               loop
-              autoplay 
+              autoplay={{ delay: 2000 }}
               loopedSlides={true}
-              onTimeUpdate={500}
+              onTimeUpdate={1000}
                 
             >
               <SwiperSlide className="">
@@ -67,11 +69,14 @@ const Carousel = () => {
           <div className="col-12 col-sm-12 col-md-4 col-lg-4">
           <h4>Top Rated Products</h4>
             <Swiper
-              navigation={false}
-              modules={[Navigation]}
+               navigation={false}
+              modules={[Navigation, Autoplay]}
               className="mySwiper"
               slidesPerView={1}
               loop
+              autoplay={{ delay: 2000 }}
+              loopedSlides={true}
+              onTimeUpdate={1000}
             >
               <SwiperSlide >
                 {CarouselData.map((item) => {
@@ -111,10 +116,13 @@ const Carousel = () => {
           <h4>Review Products</h4>
             <Swiper
               navigation={false}
-              modules={[Navigation]}
+              modules={[Navigation, Autoplay]}
               className="mySwiper"
               slidesPerView={1}
               loop
+              autoplay={{ delay: 2000 }}
+              loopedSlides={true}
+              onTimeUpdate={1000}
             >
               <SwiperSlide >
                 {CarouselData.map((item) => {

@@ -35,7 +35,7 @@ const AppRouter = () => {
       <ContextProvider>
         <BrowserRouter>
         <ToastContainer />
-        <Header changeMood={changeMood} />
+        <Header changeMood={changeMood} dark={dark} />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />

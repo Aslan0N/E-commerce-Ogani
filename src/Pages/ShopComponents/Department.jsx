@@ -6,11 +6,12 @@ import Sale from '../../Data/Sale.json'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 
 // import "./styles.css";
 
 // import required modules
-import { Navigation } from "swiper";
+import { Navigation,Autoplay } from "swiper";
 import FruitsCategory from "../HomeComponents/FruitsCategory";
 import TaskBar from "./TaskBar";
 
@@ -90,13 +91,13 @@ const Department = () => {
                   <h4>Latest Products</h4>
             <Swiper
               navigation={false}
-              modules={[Navigation]}
+              modules={[Navigation, Autoplay]}
               className="mySwiper"
               slidesPerView={1}
               loop
-              autoplay 
+              autoplay={{ delay: 1000 }}
               loopedSlides={true}
-              onTimeUpdate={500}
+              onTimeUpdate={1000}
                 
             >
               <SwiperSlide className="">
@@ -141,12 +142,14 @@ const Department = () => {
                   <div className="col-12 col-sm-12 col-md-12 col-lg-12">
                   <h2>Sale off</h2>
                   <Swiper
-              navigation={false}
-              modules={[Navigation]}
+               navigation={false}
+              modules={[Navigation, Autoplay]}
               className="mySwiper"
               slidesPerView={3}
               loop
-              autoplay 
+              autoplay={{ delay: 1000 }}
+              loopedSlides={true}
+              onTimeUpdate={1000}
                 
             >
                 {Sale.map((item) => {

@@ -6,7 +6,7 @@ import { useCart } from 'react-use-cart'
 
 
 
-const Header = ({changeMood}) => {
+const Header = ({changeMood, dark}) => {
   const context = useContext(GlobalContext)
   const [opn, setOpn] = useState(false)
 
@@ -53,8 +53,7 @@ const Header = ({changeMood}) => {
             </div>
             <span className='span'></span>
             <div className="login">
-              <i className="fa-solid fa-user" onClick={changeMood}></i>
-              Login
+              <i className={!dark ? "fs-5 fa-regular fa-moon" : "fs-5 fa-solid fa-sun"} onClick={changeMood}></i>
             </div>
           </div>
          </div>

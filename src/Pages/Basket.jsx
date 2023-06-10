@@ -38,7 +38,7 @@ const Basket = () => {
                   ></i>
                 </td>
                 <td>
-                  <img width={130} src={item.image} alt={item.title} />
+                  <img className="my-2" width={130} src={item.image} alt={item.title} />
                 </td>
                 <td>{item.title}</td>
                 <td>{item.price}</td>
@@ -67,13 +67,12 @@ const Basket = () => {
           })}
         </table>
       </section>
-      <div className="container total">
+      <div className="con total">
         <div className="row">
-          {" "}
-          <div className="col-12 col-sm-6col-ms-6 col-lg-6">
+          <div className="col-12 col-sm-12 col-ms-12 col-lg-12">
             <h3>Subtotal: {cartTotal.toFixed(2)} </h3>
           </div>
-          <div className="col-12 col-sm-6col-ms-6 col-lg-6">
+          <div className="col-12 col-sm-12 col-ms-12 col-lg-12">
             <button onClick={() => setItems([])}>Buy Now</button>
           </div>
         </div>
