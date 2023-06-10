@@ -6,7 +6,7 @@ import { useCart } from 'react-use-cart'
 
 
 
-const Header = () => {
+const Header = ({changeMood}) => {
   const context = useContext(GlobalContext)
   const [opn, setOpn] = useState(false)
 
@@ -19,7 +19,8 @@ const Header = () => {
     <>
       <header>
       <div className="res">
-            <img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="" />
+            {/* <img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="" /> */}
+            <div className="logo"></div>
       </div>
 
       <button onClick={toogleNav} className='fa-solid fa-bars res'></button>
@@ -52,7 +53,7 @@ const Header = () => {
             </div>
             <span className='span'></span>
             <div className="login">
-              <i className="fa-solid fa-user"></i>
+              <i className="fa-solid fa-user" onClick={changeMood}></i>
               Login
             </div>
           </div>
@@ -61,7 +62,7 @@ const Header = () => {
         <div className="header-bottom">
          <div className="item">
          <div className="logo">
-            <img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="" />
+            {/* <img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="" /> */}
           </div>
           <nav>
             <ul>

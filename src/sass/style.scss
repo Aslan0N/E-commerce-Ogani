@@ -5,6 +5,10 @@ body,
   box-sizing: border-box;
   font-family: "Cairo", sans-serif;
 }
+body{
+  background-color: var(--bgColor) !important;
+}
+
 ul {
   li {
     list-style: none;
@@ -19,6 +23,16 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+background-color: var(--bgColor);
+color: var(--textColor);
+.logo{
+  background-image: var(--img);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 70px;
+}
   .myW {
     width: 90%;
     text-align: center;
@@ -30,6 +44,7 @@ header {
   }
   .res {
     display: none;
+    color: var(--textColor);
   }
   button {
     background-color: transparent;
@@ -51,7 +66,19 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #f5f5f5;
+      background-color: var(--bgColor);
+      p{
+        color: var(--textColor);
+      }
+      div{
+        color: var(--textColor);
+      }
+      i{
+        color: var(--textColor);
+      }
+      span{
+        color: var(--textColor);
+      }
       .item {
         width: 89%;
         display: flex;
@@ -68,6 +95,7 @@ header {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          
           .left {
             width: 25%;
             display: flex;
@@ -102,6 +130,8 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: var(--bgColor);
+      color: var(--textColor);
       .item {
         width: 90%;
         display: flex;
@@ -122,7 +152,7 @@ header {
             }
             .text-none {
               text-decoration: none;
-              color: #000;
+              color: var(--textColor);
             }
           }
         }
@@ -131,6 +161,10 @@ header {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          color: var(--textColor);
+          i{
+            color: var(--textColor);
+          }
           p {
             padding: 0;
             margin: 0;
@@ -153,7 +187,7 @@ header {
   top: 0;
   width: auto;
   height: 100vh;
-  background-color: #f1f1f1;
+  background-color: var(--bgColor);
   transform: translatex(-100%);
   display: flex;
   justify-content: space-evenly;
@@ -161,6 +195,8 @@ header {
   transition: all 1s;
   padding: 25px;
   overflow: hidden;
+  z-index: 999;
+  color: var(--textColor);
   .items {
     display: flex;
     width: auto;
@@ -208,16 +244,16 @@ header {
       width: auto;
       border: none;
       outline: none;
-      background-color: #222222;
+      background-color: var(--bgColor);
       text-align: end;
       align-self: flex-end;
       padding: 2px 8px;
       border-radius: 5px;
-      color: #fff;
+      color: var(--textColor);
       font-weight: 600;
       i {
         margin: 10px;
-        color: #fff;
+        color: var(--textColor);
       }
     }
     nav {
@@ -225,7 +261,7 @@ header {
       ul {
         li {
           .text-none {
-            color: #fff;
+            color: var(--textColor);
             text-decoration: none;
             font-weight: 200;
             font-size: 15px;
@@ -262,6 +298,7 @@ header {
 #vegetable {
   width: 100%;
   height: auto;
+  background-color: var(--bgColor);
   .container {
     .row {
       .col-12 {
@@ -272,7 +309,7 @@ header {
           width: 100%;
           height: 100%;
           position: relative;
-          margin-top: 20px;
+          margin: 20px 0;
           .title {
             width: 100%;
             height: auto;
@@ -290,6 +327,7 @@ header {
               i {
                 font-size: 16px;
                 margin-right: 10px;
+                color: var(--textColor);
               }
             }
             i {
@@ -305,12 +343,12 @@ header {
             transition: all 600ms;
             border: 1px solid #ebebeb;
             position: absolute;
-            background-color: #fff;
+            background-color: var(--bgColor);
             z-index: 9;
             li {
               line-height: 40px;
               font-size: 15px;
-              color: #1c1c2b;
+              color: var(--textColor);
             }
           }
           .click{
@@ -329,6 +367,8 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background-color: var(--bgColor);
+            color: var(--textColor);
             h5 {
               width: auto;
               font-size: 16px;
@@ -338,9 +378,10 @@ header {
               align-items: center;
               padding-left: 15px;
               padding-top: 10px;
+              
               i {
                 font-size: 14px;
-                color: #4c4c4c;
+                color: var(--textColor);
               }
             }
             input {
@@ -348,7 +389,7 @@ header {
               background-color: transparent;
               padding: 2px 10px;
               border: none;
-              border-left: 1px solid #ebebeb;
+              border-left: 1px solid var(--border);
               width: 50%;
               &::placeholder {
                 color: #d6d6d6;
@@ -383,6 +424,7 @@ header {
             .p-con {
               display: inline-block;
               width: auto;
+              color: var(--textColor);
               b {
                 font-weight: 800;
                 display: block;
@@ -404,7 +446,7 @@ header {
 #fruit {
   width: 100%;
   height: auto;
- 
+  background-color: var(--bgColor);
   .btn-con {
     width: 100%;
     display: flex;
@@ -418,6 +460,8 @@ header {
         .fruit-card {
           width: 100%;
           height: 100%;
+          background-color: var(--bgColor);
+          color: var(--textColor);
           .image {
             position: relative;
             overflow: hidden;
@@ -436,11 +480,11 @@ header {
               justify-content: center;
               align-items: center;
               position: absolute;
-              bottom: -40px;
+              bottom: -60px;
               transition: all 500ms;
               i {
                 margin: 0 5px;
-                background-color: #fff;
+                background-color: var(--bgColor);
                 border-radius: 50%;
                 padding: 15px;
                 transition: transform 600ms;
@@ -455,14 +499,14 @@ header {
           }
           p {
             text-align: center;
-            color: #222222;
+            color: var(--textColor);
             font-weight: 200;
             margin-top: 5px;
           }
           span {
             text-align: center;
             font-weight: 700;
-            color: #000;
+            color: var(--textColor);
             display: inline-block;
             width: 100%;
             font-size: 17px;
@@ -481,6 +525,8 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  background-color: var(--bgColor);
+  color: var(--textColor);
   h1 {
     width: 100%;
     text-align: center;
@@ -508,6 +554,7 @@ header {
     outline: none;
     background-color: transparent;
     position: relative;
+    color: var(--textColor);
     &::after {
       content: "";
       position: absolute;
@@ -559,6 +606,7 @@ header {
     font-weight: 700;
     position: relative;
     margin-bottom: 20px;
+    color: var(--textColor);
     &::after {
       content: "";
       display: block;
@@ -581,7 +629,7 @@ header {
           .blog-body {
             width: 100%;
             .i-con {
-              color: #7d80867a;
+              color:var(--icon) ;
               margin: 15px 0;
             }
             h5 {
@@ -589,9 +637,10 @@ header {
               font-size: 18px;
               letter-spacing: -0.5px;
               margin-bottom: 10px;
+              color: var(--textColor);
             }
             p {
-              color: #727272a8;
+              color: var(--icon);
             }
           }
         }
@@ -604,7 +653,7 @@ header {
 footer {
   width: 100%;
   height: auto;
-  background-color: #f3f6fa;
+  background-color: var(--footer);
   padding: 20px;
   margin-top: 40px;
   .container {
@@ -613,17 +662,23 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // align-items: center;
-        img {
+        .logo {
+          width: 140px;
+          height: 70px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
           align-self: flex-start;
           margin-bottom: 30px;
+          background-image: var(--img);
         }
         p {
           font-size: 15px;
-          color: #222222;
+          color: var(--textColor);
         }
         h5 {
           font-weight: 700;
+          color: var(--textColor);
         }
         ul {
           display: flex;
@@ -633,11 +688,11 @@ footer {
           height: 60%;
           padding-left: 0;
           li {
-            // line-height: 26px;
             font-weight: 100;
             height: 15%;
             text-align: start;
             font-size: 13px;
+            color: var(--textColor);
           }
         }
         .join {
@@ -680,7 +735,7 @@ footer {
             transition: all 400ms;
             &:hover {
               background-color: #7fad39;
-              color: #fff;
+              color: #fff ;
             }
           }
         }
@@ -688,7 +743,7 @@ footer {
     }
   }
 }
-
+// Section Carousel
 #carousel {
   width: 100%;
   height: auto;
@@ -696,6 +751,7 @@ footer {
     h4 {
       font-weight: 700;
       font-size: 24px;
+      color: var(--textColor);
     }
     .card-car {
       width: 70%;
@@ -704,6 +760,7 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      color: var(--textColor);
       img {
         width: 40%;
         height: 100%;
@@ -1309,4 +1366,21 @@ footer {
       padding: 13px 20px;
     }
   }
+}
+
+.dark{
+  --bgColor:#333;
+  --textColor:#fff;
+  --border:#222;
+  --icon:#b1b1b17a;
+  --footer:#222;
+  --img:url(../images/logo-w.png);
+}
+.light{
+  --bgColor:#fff;
+  --textColor:#333; 
+  --border:#d6d6d6;
+  --icon:#7d80867a;
+  --footer:#f3f6fa;
+  --img:url("https://preview.colorlib.com/theme/ogani/img/logo.png");
 }

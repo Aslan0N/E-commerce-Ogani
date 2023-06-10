@@ -7,7 +7,8 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-6 col-lg-4">
-              <img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="" />
+              {/* <img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="" /> */}
+              <div className="logo"></div>
               <p>Address: 60-49 Road 11378 New York</p>
               <p>Phone: +65 11.188.888</p>
               <p>Email: hello@colorlib.com</p>

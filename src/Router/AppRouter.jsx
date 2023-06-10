@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ContextProvider } from "../Context/GlobalContext";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../Pages/HomeComponents/Home";
@@ -13,12 +13,29 @@ import { ToastContainer } from 'react-toastify';
 import AllProducts from "../Pages/AllProducts";
 
 const AppRouter = () => {
+
+
+  const [dark, setDark] = useState(false)
+  const changeMood = () =>{
+    setDark(!dark)
+    if(dark === true){
+      document.body.classList.add('light')
+      document.body.classList.remove('dark')
+    }
+    if(dark === false){
+      document.body.classList.add('dark')
+      document.body.classList.remove('light')
+    }
+    
+  }
+
+
   return (
     <>
       <ContextProvider>
         <BrowserRouter>
         <ToastContainer />
-        <Header/>
+        <Header changeMood={changeMood} />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />

@@ -6,6 +6,10 @@ body,
   font-family: "Cairo", sans-serif;
 }
 
+body {
+  background-color: var(--bgColor) !important;
+}
+
 ul li {
   list-style: none;
 }
@@ -17,6 +21,16 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}
+header .logo {
+  background-image: var(--img);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 70px;
 }
 header .myW {
   width: 90%;
@@ -29,6 +43,7 @@ header .myW i {
 }
 header .res {
   display: none;
+  color: var(--textColor);
 }
 header button {
   background-color: transparent;
@@ -51,7 +66,19 @@ header .header-con .header-top {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: var(--bgColor);
+}
+header .header-con .header-top p {
+  color: var(--textColor);
+}
+header .header-con .header-top div {
+  color: var(--textColor);
+}
+header .header-con .header-top i {
+  color: var(--textColor);
+}
+header .header-con .header-top span {
+  color: var(--textColor);
 }
 header .header-con .header-top .item {
   width: 89%;
@@ -99,6 +126,8 @@ header .header-con .header-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--bgColor);
+  color: var(--textColor);
 }
 header .header-con .header-bottom .item {
   width: 90%;
@@ -122,13 +151,17 @@ header .header-con .header-bottom .item nav ul li {
 }
 header .header-con .header-bottom .item nav ul .text-none {
   text-decoration: none;
-  color: #000;
+  color: var(--textColor);
 }
 header .header-con .header-bottom .item .items {
   width: 13%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--textColor);
+}
+header .header-con .header-bottom .item .items i {
+  color: var(--textColor);
 }
 header .header-con .header-bottom .item .items p {
   padding: 0;
@@ -147,7 +180,7 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   top: 0;
   width: auto;
   height: 100vh;
-  background-color: #f1f1f1;
+  background-color: var(--bgColor);
   transform: translatex(-100%);
   display: flex;
   justify-content: space-evenly;
@@ -155,6 +188,8 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   transition: all 1s;
   padding: 25px;
   overflow: hidden;
+  z-index: 999;
+  color: var(--textColor);
 }
 .header-con2 .items {
   display: flex;
@@ -200,23 +235,23 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   width: auto;
   border: none;
   outline: none;
-  background-color: #222222;
+  background-color: var(--bgColor);
   text-align: end;
   align-self: flex-end;
   padding: 2px 8px;
   border-radius: 5px;
-  color: #fff;
+  color: var(--textColor);
   font-weight: 600;
 }
 .header-con2 .nav-menu button i {
   margin: 10px;
-  color: #fff;
+  color: var(--textColor);
 }
 .header-con2 .nav-menu nav {
   margin-top: 15px;
 }
 .header-con2 .nav-menu nav ul li .text-none {
-  color: #fff;
+  color: var(--textColor);
   text-decoration: none;
   font-weight: 200;
   font-size: 15px;
@@ -246,6 +281,7 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
 #vegetable {
   width: 100%;
   height: auto;
+  background-color: var(--bgColor);
 }
 #vegetable .container .row .col-12 {
   display: flex;
@@ -256,7 +292,7 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   width: 100%;
   height: 100%;
   position: relative;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 #vegetable .container .row .col-12 .category-con .title {
   width: 100%;
@@ -276,6 +312,7 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
 #vegetable .container .row .col-12 .category-con .title h6 i {
   font-size: 16px;
   margin-right: 10px;
+  color: var(--textColor);
 }
 #vegetable .container .row .col-12 .category-con .title i {
   color: #fff;
@@ -289,13 +326,13 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   transition: all 600ms;
   border: 1px solid #ebebeb;
   position: absolute;
-  background-color: #fff;
+  background-color: var(--bgColor);
   z-index: 9;
 }
 #vegetable .container .row .col-12 .category-con ul li {
   line-height: 40px;
   font-size: 15px;
-  color: #1c1c2b;
+  color: var(--textColor);
 }
 #vegetable .container .row .col-12 .category-con .click {
   height: 70vh;
@@ -313,6 +350,8 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--bgColor);
+  color: var(--textColor);
 }
 #vegetable .container .row .col-12 .col-12 form h5 {
   width: auto;
@@ -326,14 +365,14 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
 }
 #vegetable .container .row .col-12 .col-12 form h5 i {
   font-size: 14px;
-  color: #4c4c4c;
+  color: var(--textColor);
 }
 #vegetable .container .row .col-12 .col-12 form input {
   outline: none;
   background-color: transparent;
   padding: 2px 10px;
   border: none;
-  border-left: 1px solid #ebebeb;
+  border-left: 1px solid var(--border);
   width: 50%;
 }
 #vegetable .container .row .col-12 .col-12 form input::-moz-placeholder {
@@ -370,6 +409,7 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
 #vegetable .container .row .col-12 .col-lg-4 .con .p-con {
   display: inline-block;
   width: auto;
+  color: var(--textColor);
 }
 #vegetable .container .row .col-12 .col-lg-4 .con .p-con b {
   font-weight: 800;
@@ -383,6 +423,7 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
 #fruit {
   width: 100%;
   height: auto;
+  background-color: var(--bgColor);
 }
 #fruit .btn-con {
   width: 100%;
@@ -393,6 +434,8 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
 #fruit .container .row .col-12 .fruit-card {
   width: 100%;
   height: 100%;
+  background-color: var(--bgColor);
+  color: var(--textColor);
 }
 #fruit .container .row .col-12 .fruit-card .image {
   position: relative;
@@ -411,12 +454,12 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: -40px;
+  bottom: -60px;
   transition: all 500ms;
 }
 #fruit .container .row .col-12 .fruit-card .image .i-con i {
   margin: 0 5px;
-  background-color: #fff;
+  background-color: var(--bgColor);
   border-radius: 50%;
   padding: 15px;
   transition: transform 600ms;
@@ -429,14 +472,14 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
 }
 #fruit .container .row .col-12 .fruit-card p {
   text-align: center;
-  color: #222222;
+  color: var(--textColor);
   font-weight: 200;
   margin-top: 5px;
 }
 #fruit .container .row .col-12 .fruit-card span {
   text-align: center;
   font-weight: 700;
-  color: #000;
+  color: var(--textColor);
   display: inline-block;
   width: 100%;
   font-size: 17px;
@@ -450,6 +493,8 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  background-color: var(--bgColor);
+  color: var(--textColor);
 }
 #btn-category h1 {
   width: 100%;
@@ -478,6 +523,7 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   outline: none;
   background-color: transparent;
   position: relative;
+  color: var(--textColor);
 }
 #btn-category .btn-category::after {
   content: "";
@@ -518,6 +564,7 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   font-weight: 700;
   position: relative;
   margin-bottom: 20px;
+  color: var(--textColor);
 }
 #from-blog h2::after {
   content: "";
@@ -539,7 +586,7 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   width: 100%;
 }
 #from-blog .container .row .col-12 .blog-card .blog-body .i-con {
-  color: rgba(125, 128, 134, 0.4784313725);
+  color: var(--icon);
   margin: 15px 0;
 }
 #from-blog .container .row .col-12 .blog-card .blog-body h5 {
@@ -547,15 +594,16 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   font-size: 18px;
   letter-spacing: -0.5px;
   margin-bottom: 10px;
+  color: var(--textColor);
 }
 #from-blog .container .row .col-12 .blog-card .blog-body p {
-  color: rgba(114, 114, 114, 0.6588235294);
+  color: var(--icon);
 }
 
 footer {
   width: 100%;
   height: auto;
-  background-color: #f3f6fa;
+  background-color: var(--footer);
   padding: 20px;
   margin-top: 40px;
 }
@@ -564,16 +612,23 @@ footer .container .row .col-12 {
   flex-direction: column;
   justify-content: center;
 }
-footer .container .row .col-12 img {
+footer .container .row .col-12 .logo {
+  width: 140px;
+  height: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   align-self: flex-start;
   margin-bottom: 30px;
+  background-image: var(--img);
 }
 footer .container .row .col-12 p {
   font-size: 15px;
-  color: #222222;
+  color: var(--textColor);
 }
 footer .container .row .col-12 h5 {
   font-weight: 700;
+  color: var(--textColor);
 }
 footer .container .row .col-12 ul {
   display: flex;
@@ -588,6 +643,7 @@ footer .container .row .col-12 ul li {
   height: 15%;
   text-align: start;
   font-size: 13px;
+  color: var(--textColor);
 }
 footer .container .row .col-12 .join {
   margin-bottom: 20px;
@@ -641,6 +697,7 @@ footer .container .row .col-12 .i-con i:hover {
 #carousel .col-12 h4 {
   font-weight: 700;
   font-size: 24px;
+  color: var(--textColor);
 }
 #carousel .col-12 .card-car {
   width: 70%;
@@ -649,6 +706,7 @@ footer .container .row .col-12 .i-con i:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--textColor);
 }
 #carousel .col-12 .card-car img {
   width: 40%;
@@ -1187,4 +1245,22 @@ footer .container .row .col-12 .i-con i:hover {
   width: auto;
   height: auto;
   padding: 13px 20px;
+}
+
+.dark {
+  --bgColor:#333;
+  --textColor:#fff;
+  --border:#222;
+  --icon:#b1b1b17a;
+  --footer:#222;
+  --img:url(../images/logo-w.png);
+}
+
+.light {
+  --bgColor:#fff;
+  --textColor:#333;
+  --border:#d6d6d6;
+  --icon:#7d80867a;
+  --footer:#f3f6fa;
+  --img:url("https://preview.colorlib.com/theme/ogani/img/logo.png");
 }/*# sourceMappingURL=style.css.map */
