@@ -9,6 +9,9 @@ body,
 body {
   background-color: var(--bgColor) !important;
 }
+body section {
+  background-color: var(--bgColor) !important;
+}
 
 ul li {
   list-style: none;
@@ -494,7 +497,7 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   background-color: var(--bgColor);
   color: var(--textColor);
 }
@@ -546,7 +549,7 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
 #summer {
   width: 100%;
   height: auto;
-  margin: 25px 0;
+  padding: 25px 0;
 }
 #summer * {
   color: var(--textColor);
@@ -613,7 +616,7 @@ footer {
   height: auto;
   background-color: var(--footer);
   padding: 20px;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 footer .container .row .col-12 {
   display: flex;
@@ -738,6 +741,7 @@ footer .container .row .col-12 .i-con i:hover {
 #basket table {
   width: 80%;
   background-color: var(--table);
+  padding-left: 10px;
 }
 #basket table thead {
   width: 100%;
@@ -755,6 +759,7 @@ footer .container .row .col-12 .i-con i:hover {
   margin: 5px 0;
   font-weight: 800;
   font-size: 20px;
+  color: var(--textColor);
 }
 #basket table tbody td .quantity {
   width: 70%;
@@ -764,14 +769,14 @@ footer .container .row .col-12 .i-con i:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #717379;
+  color: var(--icon);
   padding: 8px 15px;
 }
 #basket table tbody td .quantity button {
   background-color: transparent;
   border: none;
   outline: none;
-  color: #717379;
+  color: var(--icon);
   font-weight: 900;
   font-size: 22px;
 }
@@ -790,6 +795,8 @@ footer .container .row .col-12 .i-con i:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: var(--textColor);
+  padding: 10px 0;
 }
 .total .row .col-12 {
   text-align: center;
@@ -832,9 +839,6 @@ footer .container .row .col-12 .i-con i:hover {
   padding: 30px 35px;
 }
 
-#veg-img .container .row .col-12 * {
-  color: var(--textColor);
-}
 #veg-img .container .row .col-12 .img {
   width: 100%;
   height: 80vh;
@@ -864,7 +868,7 @@ footer .container .row .col-12 .i-con i:hover {
 }
 #veg-img .container .row .col-12 .img button {
   background-color: #7fad39;
-  color: var(--textColor);
+  color: #fff;
   font-weight: 600;
   padding: 10px 30px;
   font-size: 13px;
@@ -903,7 +907,7 @@ footer .container .row .col-12 .i-con i:hover {
 #department {
   width: 100%;
   height: auto;
-  margin-top: 70px;
+  padding-top: 70px;
 }
 #department * {
   color: var(--textColor);
@@ -1073,7 +1077,7 @@ footer .container .row .col-12 .i-con i:hover {
 #cards {
   width: 100%;
   height: auto;
-  margin-top: 60px;
+  padding-top: 60px;
 }
 #cards * {
   color: var(--textColor);
@@ -1189,7 +1193,7 @@ footer .container .row .col-12 .i-con i:hover {
 #min-card {
   width: 100%;
   height: auto;
-  margin-top: 50px;
+  padding: 50px;
 }
 #min-card * {
   color: var(--textColor);
@@ -1225,7 +1229,7 @@ footer .container .row .col-12 .i-con i:hover {
 #map {
   width: 100%;
   height: 80vh;
-  margin: 30px 0;
+  padding: 30px 0;
 }
 #map iframe {
   width: 100%;

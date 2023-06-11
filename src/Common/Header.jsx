@@ -3,10 +3,11 @@ import { LinkContainer } from 'react-router-bootstrap'
 import { NavLink } from 'react-router-dom'
 import { GlobalContext } from '../Context/GlobalContext'
 import { useCart } from 'react-use-cart'
+import { GlobalTheme } from '../Context/GlobalTheme'
 
 
 
-const Header = ({changeMood, dark}) => {
+const Header = () => {
   const context = useContext(GlobalContext)
   const [opn, setOpn] = useState(false)
 
@@ -14,12 +15,13 @@ const Header = ({changeMood, dark}) => {
     setOpn((value)=> !value)
   }
   const { totalUniqueItems} = useCart()
+  const {darkMode, changeMood} = useContext(GlobalTheme)
+ 
 
   return (
     <>
       <header>
       <div className="res">
-            {/* <img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="" /> */}
             <div className="logo"></div>
       </div>
 
@@ -53,7 +55,7 @@ const Header = ({changeMood, dark}) => {
             </div>
             <span className='span'></span>
             <div className="login">
-              <i className={!dark ? "fs-5 fa-regular fa-moon" : "fs-5 fa-solid fa-sun"} onClick={changeMood}></i>
+              <i className={!darkMode ? "fs-5 fa-regular fa-moon" : "fs-5 fa-solid fa-sun"} onClick={changeMood}></i>
             </div>
           </div>
          </div>
@@ -61,7 +63,6 @@ const Header = ({changeMood, dark}) => {
         <div className="header-bottom">
          <div className="item">
          <div className="logo">
-            {/* <img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="" /> */}
           </div>
           <nav>
             <ul>

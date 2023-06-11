@@ -7,6 +7,9 @@ body,
 }
 body{
   background-color: var(--bgColor) !important;
+  section{
+    background-color: var(--bgColor) !important;
+  }
 }
 
 ul {
@@ -345,7 +348,6 @@ color: var(--textColor);
             border: 1px solid #ebebeb;
             position: absolute;
             background-color: var(--bgColor) !important;
-            // background-color: #fff;
             z-index: 9;
             li {
               line-height: 40px;
@@ -527,7 +529,7 @@ color: var(--textColor);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   background-color: var(--bgColor);
   color: var(--textColor);
   h1 {
@@ -583,7 +585,7 @@ color: var(--textColor);
 #summer {
   width: 100%;
   height: auto;
-  margin: 25px 0;
+  padding: 25px 0;
   *{
     color: var(--textColor);
   }
@@ -664,7 +666,7 @@ footer {
   height: auto;
   background-color: var(--footer);
   padding: 20px;
-  margin-top: 40px;
+  padding-top: 40px;
   .container {
     .row {
       .col-12 {
@@ -794,6 +796,7 @@ footer {
   table {
     width: 80%;
     background-color: var(--table);
+    padding-left: 10px;
     thead {
       width: 100%;
       background-color: #7fad39;
@@ -809,6 +812,7 @@ footer {
         margin: 5px 0;
         font-weight: 800;
         font-size: 20px;
+        color: var(--textColor);
         .quantity{
           width: 70%;
           height: auto;
@@ -817,13 +821,13 @@ footer {
           display: flex;
           justify-content: space-around;
           align-items: center;
-          color: #717379;
+          color: var(--icon);
           padding: 8px 15px;
           button{
             background-color: transparent;
             border: none;
             outline: none;
-            color: #717379;
+            color: var(--icon);
             font-weight: 900;
             font-size: 22px;
           }
@@ -846,6 +850,8 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: var(--textColor);
+  padding: 10px 0;
   .row{
     .col-12{
       text-align: center;
@@ -893,9 +899,6 @@ footer {
   .container{
     .row{
       .col-12{
-        *{
-          color: var(--textColor);
-        }
         .img {
           width: 100%;
           height: 80vh;
@@ -924,7 +927,7 @@ footer {
           }
           button {
             background-color: #7fad39;
-            color: var(--textColor);
+            color: #fff;
             font-weight: 600;
             padding: 10px 30px;
             font-size: 13px;
@@ -969,7 +972,7 @@ footer {
 #department{
   width: 100%;
   height: auto;
-  margin-top: 70px;
+  padding-top: 70px;
   *{
     color: var(--textColor);
   }
@@ -1156,7 +1159,7 @@ footer {
 #cards{
   width: 100%;
   height: auto;
-  margin-top: 60px;
+  padding-top: 60px;
   *{
     color: var(--textColor);
   }
@@ -1297,7 +1300,7 @@ footer {
 #min-card{
   width: 100%;
   height: auto;
-  margin-top: 50px;
+  padding: 50px;
   *{
     color: var(--textColor);
   }
@@ -1337,7 +1340,7 @@ footer {
 #map{
   width: 100%;
   height: 80vh;
-  margin: 30px 0;
+  padding: 30px 0;
   iframe{
     width: 100%;
     height: 100%;
