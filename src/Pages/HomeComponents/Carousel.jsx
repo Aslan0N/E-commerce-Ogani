@@ -8,19 +8,19 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
 
-// import "./styles.css";
-
 // import required modules
 import { Navigation, Autoplay } from "swiper";
+import { useTranslation } from "react-i18next";
 
 const Carousel = () => {
+  const {t} = useTranslation()
   return (
     <>
       <section id="carousel">
       <div className="container">
         <div className="row">
           <div className="col-12 col-sm-12 col-md-4 col-lg-4">
-          <h4>Latest Products</h4>
+          <h4>{t("carousel.0")}</h4>
             <Swiper
               navigation={false}
               modules={[Navigation, Autoplay]}
@@ -67,7 +67,7 @@ const Carousel = () => {
           </div>
             
           <div className="col-12 col-sm-12 col-md-4 col-lg-4">
-          <h4>Top Rated Products</h4>
+          <h4>{t("carousel.1")}</h4>
             <Swiper
                navigation={false}
               modules={[Navigation, Autoplay]}
@@ -113,7 +113,7 @@ const Carousel = () => {
           </div>
             
           <div className="col-12 col-sm-12 col-md-4 col-lg-4">
-          <h4>Review Products</h4>
+          <h4>{t("carousel.2")}</h4>
             <Swiper
               navigation={false}
               modules={[Navigation, Autoplay]}

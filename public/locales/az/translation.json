@@ -1,0 +1,75 @@
+{
+    "header":{
+        "0":"Ana səhifə",
+        "1":"Mağaza",
+        "2":"Səhifə",
+        "3":"Bloq",
+        "4":"Əlaqə"
+    },
+    "vegetable":{
+        "dep":"Bütün şöbələr",
+        "0":"Yeni ət",
+        "1":"Tərəvəz",
+        "2":"Meyvə və Fındıq Hədiyyələri",
+        "3":"Təzə giləmeyvə",
+        "4":"Okean yeməkləri",
+        "5":"Kərə yağı və Yumurta",
+        "6":"Fastfood",
+        "7":"Təzə soğan",
+        "8":"Papayaya və Crisps",
+        "9":"Yulaf",
+        "form":{
+            "0":"Bütün Kateqoriyalar",
+            "1":"Nə lazımdır",
+            "2":"Axtar",
+            "3":"7/24 dəstək"
+        }
+    },
+    "veg-img":{
+        "0": "Yeni meyvə",
+        "1":"Tərəvəz 100% təbii" ,
+        "2":"Pulsuz Götürmə və Çatdırılma Mövcuddur",
+        "3":"İndi al"
+    },
+    "category-btn":{
+        "0":"Seçilmiş Məhsul",
+        "1":"Bütün",
+        "2":"Portağal",
+        "3":"Təzə Ət", 
+        "4":"Tərəvəz",
+        "5":"Fastfood"
+    },
+    "carousel":{
+        "0":"Son məhsullar",
+        "1":"Ən çox rəy alanlar",
+        "2":"Nəzərdən Keçir"
+    },
+    "from-blog":{
+        "0":"Bloqdan",
+        "1":"Bişirmə məsləhətləri yeməyi asanlaşdırır",
+        "2":"Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat",
+        "3":"30 üçün səhər yeməyi hazırlamaq üçün 6 yol",
+        "4":"ABŞ-da təmiz fermaya baş çəkin"
+    },
+    "footer":{
+        "0":"Ünvan: 60-49 Road 11378 New York",
+        "1":"Telefon: +65 11.188.888",
+        "2":"Faydalı Linklər",
+        "3":"Haqqımızda",
+        "4":"Mağazamız haqqında",
+        "5":"Təhlükəsiz alış-veriş",
+        "6":"Çatdırılma məlumatı",
+        "7":"Gizlilik Siyasəti",
+        "8":"Sayt Xəritəmiz",
+        "9":"Biz kimik",
+        "10":"Bizim xidmətlə",
+        "11":"Layihələr",
+        "12":"Əlaqə",
+        "13":"Yeniliklər",
+        "14":"Rəylər",
+        "15":"Bülletenimizə İndi Qoşulun",
+        "16":"Ən son mağazamız və xüsusi təkliflərimiz haqqında e-poçt yeniləmələri alın.",
+        "17":"E-poçtunuzu daxil edin",
+        "18":"abunə olun"
+        }
+}

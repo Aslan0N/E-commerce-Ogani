@@ -27,6 +27,14 @@ header {
   background-color: var(--bgColor);
   color: var(--textColor);
 }
+header .lang {
+  width: auto;
+  background-color: #4c4c4c;
+}
+header .lang button {
+  color: #d6d6d6;
+  font-size: 12px;
+}
 header .logo {
   background-image: var(--img);
   background-position: center;
@@ -861,6 +869,7 @@ footer .container .row .col-12 .i-con i:hover {
   font-size: 3rem;
   font-weight: 900;
   margin: 8px 0;
+  width: 60%;
 }
 #veg-img .container .row .col-12 .img p {
   color: var(--icon);
@@ -1290,21 +1299,21 @@ footer .container .row .col-12 .i-con i:hover {
 }
 
 .dark {
-  --bgColor:#333;
-  --textColor:#fff;
-  --border:#222;
-  --icon:#b1b1b17a;
-  --footer:#222;
-  --img:url(../images/logo-w.png);
-  --table:#444;
+  --bgColor: #333;
+  --textColor: #fff;
+  --border: #222;
+  --icon: #b1b1b17a;
+  --footer: #222;
+  --img: url(../images/logo-w.png);
+  --table: #444;
 }
 
 .light {
-  --bgColor:#fff;
-  --textColor:#333;
-  --border:#d6d6d6;
-  --icon:#7d80867a;
-  --footer:#f3f6fa;
-  --img:url("https://preview.colorlib.com/theme/ogani/img/logo.png");
-  --table:#f2f2f2;
+  --bgColor: #fff;
+  --textColor: #333;
+  --border: #d6d6d6;
+  --icon: #7d80867a;
+  --footer: #f3f6fa;
+  --img: url("https://preview.colorlib.com/theme/ogani/img/logo.png");
+  --table: #f2f2f2;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,75 @@
+{
+    "header":{
+        "0":"Home",
+        "1":"Shop",
+        "2":"Pages",
+        "3":"Blog",
+        "4":"Contact"
+    },
+    "vegetable":{
+        "dep":" All departments",
+        "0":"Fresh Meat",
+        "1":"Vegetables",
+        "2":"Fruit & Nut Gifts",
+        "3":"Fresh Berries",
+        "4":"Ocean Foods",
+        "5":"Butter & Eggs",
+        "6":"Fastfood",
+        "7":"Fresh Onion",
+        "8":"Papayaya & Crisps",
+        "9":"Oatmeal",
+        "form":{
+            "0":"All Category",
+            "1":"What do you need",
+            "2":"Search",
+            "3":"support 24/7 time"
+        }
+    },
+    "veg-img":{
+        "0": "Fruit Fresh",
+        "1":"Vegetable 100% organic" ,
+        "2":"Free Pickup and Delivery Available",
+        "3":"Shop Now"
+    },
+    "category-btn":{
+        "0":"Featured Product",
+        "1":"All",
+        "2":"Oranges",
+        "3":"Fresh Meat", 
+        "4":"Vegetables",
+        "5":"Fastfood"
+    },
+    "carousel":{
+        "0":"Latest Products",
+        "1":"Top Rated Products",
+        "2":"Review Products"
+    },
+    "from-blog":{
+        "0":"From the blog",
+        "1":"Cooking tips make cooking simple",
+        "2":"Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat",
+        "3":"6 ways to prepare breakfast for 30",
+        "4":"Visit the clean farm in the US"
+    },
+    "footer":{
+        "0":"Address: 60-49 Road 11378 New York",
+        "1":"Phone: +65 11.188.888",
+        "2":"Useful Links",
+        "3":"About Us",
+        "4":"About Our Shop",
+        "5":"Secure Shopping",
+        "6":"Delivery Information",
+        "7":"Privacy Polich",
+        "8":"Our Sitemap",
+        "9":"Who We Are",
+        "10":"Our Services",
+        "11":"Projects",
+        "12":"Contact",
+        "13":"İnnovatİon",
+        "14":"Testimonials",
+        "15":"Join Our Newsletter Now",
+        "16":"Get E-mail updates about our latest shop andspecial offers.",
+        "17":"Enter your email",
+        "18":"Subcribe"
+        }
+}

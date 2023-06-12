@@ -4,18 +4,25 @@ import { NavLink } from 'react-router-dom'
 import { GlobalContext } from '../Context/GlobalContext'
 import { useCart } from 'react-use-cart'
 import { GlobalTheme } from '../Context/GlobalTheme'
-
+import {  useTranslation } from 'react-i18next'
+import i18n from 'i18next'
 
 
 const Header = () => {
   const context = useContext(GlobalContext)
   const [opn, setOpn] = useState(false)
-
+  
   const toogleNav = ()=>{
     setOpn((value)=> !value)
   }
   const { totalUniqueItems} = useCart()
   const {darkMode, changeMood} = useContext(GlobalTheme)
+  
+  const {t} = useTranslation()
+
+  const handleChange = (lang) =>{
+    i18n.changeLanguage(lang)
+  }
  
 
   return (
@@ -51,7 +58,10 @@ const Header = () => {
             <i className="fa-brands fa-pinterest"></i>
             <span className='span'></span>
             <div className="lang">
-              English
+            <div className="lang">
+            <button className='lang-btn' onClick={()=> handleChange("az")}>Az</button>
+            <button className='lang-btn' onClick={()=> handleChange("en")}>En</button>
+            </div>
             </div>
             <span className='span'></span>
             <div className="login">
@@ -66,38 +76,39 @@ const Header = () => {
           </div>
           <nav>
             <ul>
+              
               <li>
               <LinkContainer to={'/'}>
               <NavLink className={'text-none'}>
-                  Home
+                  {t("header.0")}
               </NavLink>
               </LinkContainer>
               </li>
               <li>
               <LinkContainer to={'/shop'}>
               <NavLink className={'text-none'}>
-                  Shop
+                  {t("header.1")}
               </NavLink>
               </LinkContainer>
               </li>
               <li>
               <LinkContainer to={'/pages'}>
               <NavLink className={'text-none'}>
-                  Pages
+              {t("header.2")}
               </NavLink>
               </LinkContainer>
               </li>
               <li>
               <LinkContainer to={'/blog'}>
               <NavLink className={'text-none'}>
-                  Blog
+              {t("header.3")}
               </NavLink>
               </LinkContainer>
               </li>
               <li>
               <LinkContainer to={'/contact'}>
               <NavLink className={'text-none'}>
-                  Contact
+              {t("header.4")}
               </NavLink>
               </LinkContainer>
               </li>

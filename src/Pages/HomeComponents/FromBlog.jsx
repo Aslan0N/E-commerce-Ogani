@@ -1,10 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const FromBlog = () => {
+    const {t} = useTranslation()
   return (
     <>
         <section id='from-blog'>
-        <h2>From The Blog</h2>
+        <h2>{t("from-blog.0")}</h2>
             <div className="container">
                 <div className="row g-5">
                     <div className="col-12 col-sm-12 col-md-6 col-lg-4">
@@ -14,9 +16,8 @@ const FromBlog = () => {
                                 <div className="i-con">
                                <i className="fa-solid fa-calendar"></i> May 4,2019 <i class="fa-regular fa-comment"></i> 5
                                 </div>
-                                <h5>Cooking tips make cooking simple</h5>
-                                <p>Sed quia non numquam modi tempora indunt ut <br />
-                                 labore et dolore magnam aliquam quaerat</p>
+                                <h5>{t("from-blog.1")}</h5>
+                                <p>{t("from-blog.2")}</p>
                             </div>
                         </div>
                     </div>
@@ -27,9 +28,8 @@ const FromBlog = () => {
                                 <div className="i-con">
                                <i className="fa-solid fa-calendar"></i> May 4,2019 <i class="fa-regular fa-comment"></i> 5
                                 </div>
-                                <h5>6 ways to prepare breakfast for 30</h5>
-                                <p>Sed quia non numquam modi tempora indunt ut <br />
-                                 labore et dolore magnam aliquam quaerat</p>
+                                <h5>{t("from-blog.3")}</h5>
+                                <p>{t("from-blog.2")}</p>
                             </div>
                         </div>
                     </div>
@@ -40,9 +40,8 @@ const FromBlog = () => {
                                 <div className="i-con">
                                <i className="fa-solid fa-calendar"></i> May 4,2019 <i class="fa-regular fa-comment"></i> 5
                                 </div>
-                                <h5>Visit the clean farm in the US</h5>
-                                <p>Sed quia non numquam modi tempora indunt ut <br />
-                                 labore et dolore magnam aliquam quaerat</p>
+                                <h5>{t("from-blog.4")}</h5>
+                                <p>{t("from-blog.2")}</p>
                             </div>
                         </div>
                     </div>

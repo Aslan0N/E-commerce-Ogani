@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import Fruits from '../Data/FruitsData.json'
+import { useTranslation } from "react-i18next";
 
 export const GlobalContext = createContext()
 
@@ -7,6 +8,7 @@ export const GlobalContext = createContext()
 
 export const ContextProvider = ({children}) =>{
     const [isOpen, setIsOpen] = useState(false)
+    const {t} = useTranslation()
 
     const toggleMenu = () =>{
         setIsOpen((value)=> !value)
