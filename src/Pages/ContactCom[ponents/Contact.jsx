@@ -3,11 +3,13 @@ import GlobSec from '../../Components/GlobSec'
 import MinCard from './MinCard'
 import Map from './Map'
 import Message from './Message'
+import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
+  const {t}= useTranslation()
   return (
     <>
-      <GlobSec title={"Contact Us"} loc={"Contact Us"} />
+      <GlobSec title={t("globe.4")} loc={t("globe.4")} />
       <MinCard/>
       <Map/>
       <Message/>

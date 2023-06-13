@@ -1,8 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { LinkContainer } from 'react-router-bootstrap'
 import { NavLink } from 'react-router-dom'
 
 const GlobSec = (props) => {
+  const {t}= useTranslation()
   return (
     <>
         <section id='glob'>
@@ -10,7 +12,7 @@ const GlobSec = (props) => {
             <p>
             <LinkContainer to={'/'}>
                 <NavLink className={'home-link'}>
-                Home
+                {t("globe.0")}
                 </NavLink>
             </LinkContainer>
             - {props.loc}</p>

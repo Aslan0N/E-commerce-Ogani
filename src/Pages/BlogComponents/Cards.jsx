@@ -1,7 +1,9 @@
 import React from "react";
 import CategoryData from "../../Data/CategoryData.json";
+import { useTranslation } from "react-i18next";
 
 const Cards = () => {
+  const {t} = useTranslation()
   return (
     <>
       <section id="cards">
@@ -12,22 +14,22 @@ const Cards = () => {
                 <div className="row">
                   <div className="col-12 col-sm-12 col-md-12 col-lg-12">
                     <form>
-                      <input type="text" placeholder="Search..." />
+                      <input type="text" placeholder={t("form.3")} />
                       <i className="fa-solid fa-search"></i>
                     </form>
                   </div>
                   <div className="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <h3>Categories</h3>
+                    <h3>{t("blog.0")}</h3>
                     <ul>
-                      <li>All</li>
-                      <li>Beauty(20)</li>
-                      <li>Food(5)</li>
-                      <li>Life Style(9)</li>
-                      <li>Travel(10)</li>
+                      <li>{t("blog.1")}</li>
+                      <li>{t("blog.2")}(20)</li>
+                      <li>{t("blog.3")}(5)</li>
+                      <li>{t("blog.4")} Style(9)</li>
+                      <li>{t("blog.5")}(10)</li>
                     </ul>
                   </div>
                   <div className="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <h3>Recent News</h3>
+                    <h3>{t("blog.6")}</h3>
                     <div className="my-card">
                       <img
                         src="https://preview.colorlib.com/theme/ogani/img/blog/sidebar/sr-1.jpg"
@@ -35,8 +37,7 @@ const Cards = () => {
                       />
                       <div className="p-con">
                         <p>
-                          09 Kinds Of Vegetables <br />
-                          Protect The Liver
+                        {t("blog.7")}
                         </p>
                         <span>MAR 05, 2019</span>
                       </div>
@@ -48,8 +49,7 @@ const Cards = () => {
                       />
                       <div className="p-con">
                         <p>
-                          Tips You To Balance <br />
-                          Nutrition Meal Day
+                        {t("blog.8")}
                         </p>
                         <span>MAR 05, 2019</span>
                       </div>
@@ -61,22 +61,21 @@ const Cards = () => {
                       />
                       <div className="p-con">
                         <p>
-                          4 Principles Help You Lose <br />
-                          Weight With Vegetables
+                        {t("blog.9")}
                         </p>
                         <span>MAR 05, 2019</span>
                       </div>
                     </div>
                   </div>
                   <div className="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <h3>Search By</h3>
+                    <h3>{t("blog.10")}</h3>
                     <div className="con">
-                      <span>Apple</span>
-                      <span>Beauty</span>
-                      <span>Vegetables</span>
-                      <span>Fruit</span>
-                      <span>Healthy Food</span>
-                      <span>Lifestyle</span>
+                      <span>{t("blog.11")}</span>
+                      <span>{t("blog.12")}</span>
+                      <span>{t("blog.13")}</span>
+                      <span>{t("blog.14")}</span>
+                      <span>{t("blog.15")}</span>
+                      <span>{t("blog.16")}</span>
                     </div>
                   </div>
                 </div>

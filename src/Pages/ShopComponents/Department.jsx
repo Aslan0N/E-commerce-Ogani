@@ -14,8 +14,10 @@ import "swiper/css/autoplay";
 import { Navigation,Autoplay } from "swiper";
 import FruitsCategory from "../HomeComponents/FruitsCategory";
 import TaskBar from "./TaskBar";
+import { useTranslation } from "react-i18next";
 
 const Department = () => {
+  const {t} = useTranslation()
   return (
     <>
       <section id="department">
@@ -25,23 +27,23 @@ const Department = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <h3>Department</h3>
+                    <h3>{t("department.0")}</h3>
 
                     <ul>
-                      <li>Fresh Meat</li>
-                      <li>Vegetables</li>
-                      <li>Fruit & Nut Gifts</li>
-                      <li>Fresh Berries</li>
-                      <li>Ocean Foods</li>
-                      <li>Butter & Eggs</li>
-                      <li>Fastfood</li>
-                      <li>Fresh Onion</li>
-                      <li>Papayaya & Crisps</li>
-                      <li>Oatmeal</li>
+                      <li>{t("department.1")}</li>
+                      <li>{t("department.2")}</li>
+                      <li>{t("department.3")}</li>
+                      <li>{t("department.4")}</li>
+                      <li>{t("department.5")}</li>
+                      <li>{t("department.6")}</li>
+                      <li>{t("department.7")}</li>
+                      <li>{t("department.8")}</li>
+                      <li>{t("department.9")}</li>
+                      <li>{t("department.10")}</li>
                     </ul>
                   </div>
                   <div className="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <h3>Price</h3>
+                    <h3>{t("department.11")}</h3>
                     <div className="range-con">
                     <div className="circle first"></div>
                         <div className="range"></div>
@@ -50,45 +52,45 @@ const Department = () => {
                     <p className="p">$10 - $540</p>
                   </div>
                   <div className="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <h3>Colors</h3>
+                    <h3>{t("color.0")}</h3>
                     <div className="color-con">
                         <div className="color">
                             <span className="white"></span>
-                            <p>White</p>
+                            <p>{t("color.1")}</p>
                         </div>
                         <div className="color">
                             <span className="orange"></span>
-                            <p>Orange</p>
+                            <p>{t("color.2")}</p>
                         </div>
                         <div className="color">
                             <span className="red"></span>
-                            <p>Red</p>
+                            <p>{t("color.3")}</p>
                         </div>
                         <div className="color">
                             <span className="black"></span>
-                            <p>Black</p>
+                            <p>{t("color.4")}</p>
                         </div>
                         <div className="color">
                             <span className="blue"></span>
-                            <p>Blue</p>
+                            <p>{t("color.5")}</p>
                         </div>
                         <div className="color">
                             <span className="green"></span>
-                            <p>Green</p>
+                            <p>{t("color.6")}</p>
                         </div>
                     </div>
                   </div>
                   <div className="col-12 col-sm-12 col-md-12 col-lg-12">
-                  <h3>Popular Size</h3>
+                  <h3>{t("size.0")}</h3>
                     <div className="size-con">
-                    <span>Large</span>
-                    <span>Medium</span>
-                    <span>Small</span>
-                    <span>Tiny</span>
+                    <span>{t("size.1")}</span>
+                    <span>{t("size.2")}</span>
+                    <span>{t("size.3")}</span>
+                    <span>{t("size.4")}</span>
                     </div>
                   </div>
                   <div className="col-12 col-sm-12 col-md-12 col-lg-12">
-                  <h4>Latest Products</h4>
+                  <h4>{t("size.5")}</h4>
             <Swiper
               navigation={false}
               modules={[Navigation, Autoplay]}

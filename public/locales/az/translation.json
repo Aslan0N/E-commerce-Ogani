@@ -1,75 +1,144 @@
 {
-    "header":{
-        "0":"Ana səhifə",
-        "1":"Mağaza",
-        "2":"Səhifə",
-        "3":"Bloq",
-        "4":"Əlaqə"
-    },
-    "vegetable":{
-        "dep":"Bütün şöbələr",
-        "0":"Yeni ət",
-        "1":"Tərəvəz",
-        "2":"Meyvə və Fındıq Hədiyyələri",
-        "3":"Təzə giləmeyvə",
-        "4":"Okean yeməkləri",
-        "5":"Kərə yağı və Yumurta",
-        "6":"Fastfood",
-        "7":"Təzə soğan",
-        "8":"Papayaya və Crisps",
-        "9":"Yulaf",
-        "form":{
-            "0":"Bütün Kateqoriyalar",
-            "1":"Nə lazımdır",
-            "2":"Axtar",
-            "3":"7/24 dəstək"
-        }
-    },
-    "veg-img":{
-        "0": "Yeni meyvə",
-        "1":"Tərəvəz 100% təbii" ,
-        "2":"Pulsuz Götürmə və Çatdırılma Mövcuddur",
-        "3":"İndi al"
-    },
-    "category-btn":{
-        "0":"Seçilmiş Məhsul",
-        "1":"Bütün",
-        "2":"Portağal",
-        "3":"Təzə Ət", 
-        "4":"Tərəvəz",
-        "5":"Fastfood"
-    },
-    "carousel":{
-        "0":"Son məhsullar",
-        "1":"Ən çox rəy alanlar",
-        "2":"Nəzərdən Keçir"
-    },
-    "from-blog":{
-        "0":"Bloqdan",
-        "1":"Bişirmə məsləhətləri yeməyi asanlaşdırır",
-        "2":"Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat",
-        "3":"30 üçün səhər yeməyi hazırlamaq üçün 6 yol",
-        "4":"ABŞ-da təmiz fermaya baş çəkin"
-    },
-    "footer":{
-        "0":"Ünvan: 60-49 Road 11378 New York",
-        "1":"Telefon: +65 11.188.888",
-        "2":"Faydalı Linklər",
-        "3":"Haqqımızda",
-        "4":"Mağazamız haqqında",
-        "5":"Təhlükəsiz alış-veriş",
-        "6":"Çatdırılma məlumatı",
-        "7":"Gizlilik Siyasəti",
-        "8":"Sayt Xəritəmiz",
-        "9":"Biz kimik",
-        "10":"Bizim xidmətlə",
-        "11":"Layihələr",
-        "12":"Əlaqə",
-        "13":"Yeniliklər",
-        "14":"Rəylər",
-        "15":"Bülletenimizə İndi Qoşulun",
-        "16":"Ən son mağazamız və xüsusi təkliflərimiz haqqında e-poçt yeniləmələri alın.",
-        "17":"E-poçtunuzu daxil edin",
-        "18":"abunə olun"
-        }
+  "header": {
+    "0": "Ana səhifə",
+    "1": "Mağaza",
+    "2": "Səhifə",
+    "3": "Bloq",
+    "4": "Əlaqə"
+  },
+  "vegetable": {
+    "dep": "Bütün şöbələr",
+    "0": "Yeni ət",
+    "1": "Tərəvəz",
+    "2": "Meyvə və Fındıq Hədiyyələri",
+    "3": "Təzə giləmeyvə",
+    "4": "Okean yeməkləri",
+    "5": "Kərə yağı və Yumurta",
+    "6": "Fastfood",
+    "7": "Təzə soğan",
+    "8": "Papayaya və Crisps",
+    "9": "Yulaf",
+    "form": {
+      "0": "Bütün Kateqoriyalar",
+      "1": "Nə lazımdır",
+      "2": "Axtar...",
+      "3": "7/24 dəstək"
+    }
+  },
+  "veg-img": {
+    "0": "Yeni meyvə",
+    "1": "Tərəvəz 100% təbii",
+    "2": "Pulsuz Götürmə və Çatdırılma Mövcuddur",
+    "3": "İndi al"
+  },
+  "category-btn": {
+    "0": "Seçilmiş Məhsul",
+    "1": "Bütün",
+    "2": "Portağal",
+    "3": "Təzə Ət",
+    "4": "Tərəvəz",
+    "5": "Fastfood"
+  },
+  "carousel": {
+    "0": "Son məhsullar",
+    "1": "Ən çox rəy alanlar",
+    "2": "Nəzərdən Keçir"
+  },
+  "from-blog": {
+    "0": "Bloqdan",
+    "1": "Bişirmə məsləhətləri yeməyi asanlaşdırır",
+    "2": "Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat",
+    "3": "30 üçün səhər yeməyi hazırlamaq üçün 6 yol",
+    "4": "ABŞ-da təmiz fermaya baş çəkin"
+  },
+  "footer": {
+    "0": "Ünvan: 60-49 Road 11378 New York",
+    "1": "Telefon: +65 11.188.888",
+    "2": "Faydalı Linklər",
+    "3": "Haqqımızda",
+    "4": "Mağazamız haqqında",
+    "5": "Təhlükəsiz alış-veriş",
+    "6": "Çatdırılma məlumatı",
+    "7": "Gizlilik Siyasəti",
+    "8": "Sayt Xəritəmiz",
+    "9": "Biz kimik",
+    "10": "Bizim xidmətlə",
+    "11": "Layihələr",
+    "12": "Əlaqə",
+    "13": "Yeniliklər",
+    "14": "Rəylər",
+    "15": "Bülletenimizə İndi Qoşulun",
+    "16": "Ən son mağazamız və xüsusi təkliflərimiz haqqında e-poçt yeniləmələri alın.",
+    "17": "E-poçtunuzu daxil edin",
+    "18": "abunə olun"
+  },
+  "department": {
+    "0":"Şöbə",
+    "1": "Yeni ət",
+    "2": "Tərəvəz",
+    "3": "Meyvə və Fındıq Hədiyyələri",
+    "4": "Təzə giləmeyvə",
+    "5": "Okean yeməkləri",
+    "6": "Kərə yağı və Yumurta",
+    "7": "Fastfood",
+    "8": "Təzə soğan",
+    "9": "Papayaya və Crisps",
+    "10": "Yulaf",
+    "11":"Qiymət"
+  }, 
+  "color":{
+    "0":"Rənglər",
+    "1":"Ağ",
+    "2":"Narıncı",
+    "3":"Qırmızı",
+    "4":"Qara",
+    "5":"Mavi",
+    "6":"Yaşıl"
+  },
+  "size":{
+    "0":"Ölçülər",
+    "1":"Böyük",
+    "2":"Orta",
+    "3":"Kiçik",
+    "4":"Çox kiçik",
+    "5":"Ən son məhsullar"
+  },
+  "blog":{
+    "0":"Kateqoriyalar",
+    "1":"Hamı",
+    "2":"Gözəllik",
+    "3":"Qida",
+    "4":"Həyat tərzi",
+    "5":"Səyahət",
+    "6":"Son xəbərlər",
+    "7":"09 Tərəvəz Növləri Qaraciyəri Qoruyur",
+    "8":"Qidalanma Gününü Balanslaşdırmaq üçün Sizə Məsləhətlər",
+    "9":"4 Prinsip Tərəvəzlə Arıqlamağa Yardımçı Olur",
+    "10":"Axtarın",
+    "11":"Alma",
+    "12":"Gözəllik",
+    "13":"Tərəvəz",
+    "14":"Meyvə",
+    "15":"Sağlam Qida",
+    "16":" Həyat tərzi"
+  },
+  "contact":{
+    "0":"Telefon",
+    "1":"Ünvan",
+    "2":"Açıq vaxt",
+    "3":"E-poçt",
+    "4":"Mesaj Yazın",
+    "5":"Adınız",
+    "6":"E-poçtunuz",
+    "7":"Sizin mesajınız",
+    "8":"MESAJ GÖNDƏR"
+  },
+  "globe":{
+    "0":"Ana Səhifə",
+    "1":"Organi Mağazası",
+    "2":"Mağaza",
+    "3":"Bloq",
+    "4":"Bizimlə Əlaqə Saxlayın"
+
+  }
 }
