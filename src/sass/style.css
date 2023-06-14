@@ -27,6 +27,9 @@ header {
   background-color: var(--bgColor);
   color: var(--textColor);
 }
+header .fa-moon {
+  transition: all 1s;
+}
 header .lang {
   width: auto;
   background-color: #4c4c4c;
@@ -319,12 +322,13 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
 #vegetable .container .row .col-12 .category-con .title h6 {
   color: #fff;
   padding-top: 5px;
-  padding-left: 10px;
+  padding-right: 10px;
 }
 #vegetable .container .row .col-12 .category-con .title h6 i {
   font-size: 16px;
-  margin-right: 10px;
+  margin: 0 10px;
   color: #fff;
+  padding-right: 10px;
 }
 #vegetable .container .row .col-12 .category-con .title i {
   color: #fff;
@@ -375,10 +379,12 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
   align-items: center;
   padding-left: 15px;
   padding-top: 10px;
+  margin-right: 10px;
 }
 #vegetable .container .row .col-12 .col-12 form h5 i {
   font-size: 14px;
   color: var(--textColor);
+  margin: 0 7px;
 }
 #vegetable .container .row .col-12 .col-12 form input {
   outline: none;
@@ -1316,4 +1322,32 @@ footer .container .row .col-12 .i-con i:hover {
   --footer: #f3f6fa;
   --img: url("https://preview.colorlib.com/theme/ogani/img/logo.png");
   --table: #f2f2f2;
+}
+
+#page {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#page .container p {
+  font-weight: 700;
+  color: red;
+}
+
+.myCard {
+  width: 100%;
+  height: auto;
+}
+
+.rotate {
+  transform: rotate(306deg);
+  transition: all 1s;
 }/*# sourceMappingURL=style.css.map */

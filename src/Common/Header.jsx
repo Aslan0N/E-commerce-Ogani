@@ -35,7 +35,7 @@ const Header = () => {
       <button onClick={toogleNav} className='fa-solid fa-bars res'></button>
       <div className="items res myW">
             <i className="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-bag-shopping"></i>
+            <i className="fa-solid fa-bag-shopping"></i>
             <p>item: <b>$150.00</b></p>
           </div>
 
@@ -65,7 +65,7 @@ const Header = () => {
             </div>
             <span className='span'></span>
             <div className="login">
-              <i className={!darkMode ? "fs-5 fa-regular fa-moon" : "fs-5 fa-solid fa-sun"} onClick={changeMood}></i>
+              <i className={!darkMode ? "fs-5 fa-regular fa-moon" : "fs-5 fa-solid fa-sun rotate"} onClick={changeMood}></i>
             </div>
           </div>
          </div>
@@ -124,7 +124,7 @@ const Header = () => {
             <LinkContainer to={'/basket'}>
               <NavLink className={'text-none'}>
               
-              <i class="fa-solid fa-bag-shopping">
+              <i className="fa-solid fa-bag-shopping">
               <span className='count' style={totalUniqueItems === 0?{display:"none" }:{display:"inline-block"}}>{totalUniqueItems}</span>
               </i>
               </NavLink>

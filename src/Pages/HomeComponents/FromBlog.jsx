@@ -14,7 +14,7 @@ const FromBlog = () => {
                             <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-1.jpg" alt="" />
                             <div className="blog-body">
                                 <div className="i-con">
-                               <i className="fa-solid fa-calendar"></i> May 4,2019 <i class="fa-regular fa-comment"></i> 5
+                               <i className="fa-solid fa-calendar"></i> May 4,2019 <i className="fa-regular fa-comment"></i> 5
                                 </div>
                                 <h5>{t("from-blog.1")}</h5>
                                 <p>{t("from-blog.2")}</p>
@@ -26,7 +26,7 @@ const FromBlog = () => {
                             <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-2.jpg" alt="" />
                             <div className="blog-body">
                                 <div className="i-con">
-                               <i className="fa-solid fa-calendar"></i> May 4,2019 <i class="fa-regular fa-comment"></i> 5
+                               <i className="fa-solid fa-calendar"></i> May 4,2019 <i className="fa-regular fa-comment"></i> 5
                                 </div>
                                 <h5>{t("from-blog.3")}</h5>
                                 <p>{t("from-blog.2")}</p>
@@ -38,7 +38,7 @@ const FromBlog = () => {
                             <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-3.jpg" alt="" />
                             <div className="blog-body">
                                 <div className="i-con">
-                               <i className="fa-solid fa-calendar"></i> May 4,2019 <i class="fa-regular fa-comment"></i> 5
+                               <i className="fa-solid fa-calendar"></i> May 4,2019 <i className="fa-regular fa-comment"></i> 5
                                 </div>
                                 <h5>{t("from-blog.4")}</h5>
                                 <p>{t("from-blog.2")}</p>
