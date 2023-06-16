@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SingleCard from "./SingleCard";
+import CardMap from "../../Components/CardMap";
 
 const Pages = () => {
   const [data, setData] = useState(30);
@@ -13,7 +14,8 @@ const Pages = () => {
 
   return (
     <>
-      <section id="page">
+    <CardMap/>
+      {/* <section id="page">
         <div className="container">
           <input
             type="range"
@@ -34,7 +36,7 @@ const Pages = () => {
             <SingleCard myCard={myCard} setMyCard={setMyCard} />
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

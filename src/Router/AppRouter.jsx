@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { ContextProvider } from "../Context/GlobalContext";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../Pages/HomeComponents/Home";
@@ -12,18 +12,19 @@ import Basket from "../Pages/Basket";
 import { ToastContainer } from "react-toastify";
 import AllProducts from "../Pages/AllProducts";
 import { GlobalTheme } from "../Context/GlobalTheme";
+import Details from "../Pages/Details";
+import WishList from "../Pages/WishList";
 
 const AppRouter = () => {
- 
-  const {darkMode} = useContext(GlobalTheme)
+  const { darkMode } = useContext(GlobalTheme);
 
-  useEffect(()=>{
-    localStorage.setItem("Mode",darkMode)
-  },[darkMode])
+  useEffect(() => {
+    localStorage.setItem("Mode", darkMode);
+  }, [darkMode]);
 
   return (
     <>
-      <main className={darkMode? "dark" : "light"}>
+      <main className={darkMode ? "dark" : "light"}>
         <ContextProvider>
           <BrowserRouter>
             <ToastContainer />
@@ -36,6 +37,8 @@ const AppRouter = () => {
               <Route path="/contact" element={<Contact />} />
               <Route path="/basket" element={<Basket />} />
               <Route path="/all" element={<AllProducts />} />
+              <Route path="/details/:id" element={<Details />} />
+              <Route path="/wishlist" element={<WishList />} />
             </Routes>
             <Footer />
           </BrowserRouter>

@@ -2,33 +2,18 @@ import React, { useContext } from "react";
 import { useCart } from "react-use-cart";
 import { toast } from "react-toastify";
 import { GlobalContext } from "../../Context/GlobalContext";
+import { NavLink } from "react-router-dom";
+import { useWishlist } from "react-use-wishlist";
 
 const FruitsCategory = () => {
-  // const [category, setCategory] = useState([
-  //   "All",
-  //   "Oranges",
-  //   "Fresh Meat",
-  //   "Vegetables",
-  //   "Fastfood",
-  // ]);
-
-  // const [data, setData] = useState(Fruits);
-
-  // const myFilter = (category) => {
-  //   const filtered = Fruits.filter((item) => {
-  //     return item.category === category;
-  //   }); 
-  //   setData(filtered);
-  // };
-  const context = useContext(GlobalContext)
+  const context = useContext(GlobalContext);
 
   const { addItem } = useCart();
+  const {addWishlistItem} = useWishlist()
 
   return (
     <>
       <section id="fruit">
-        
-        
         <div className="container">
           <div className="row ">
             {context.data.map((item, index) => {
@@ -38,8 +23,11 @@ const FruitsCategory = () => {
                     <div className="image">
                       <img src={item.image} alt="" />
                       <div className="i-con">
-                        <i className="fa-solid fa-heart"></i>
+                        <button onClick={()=> addWishlistItem(item)}>Add</button>
                         <i className="fa-solid fa-right-left"></i>
+                        <NavLink to={`/details/${context.data.id}`}>
+                          Details
+                        </NavLink>
                         <i
                           className="fa-solid fa-cart-shopping"
                           onClick={() => {
