@@ -9,7 +9,16 @@ const FruitsCategory = () => {
   const context = useContext(GlobalContext);
 
   const { addItem } = useCart();
-  const {addWishlistItem} = useWishlist()
+  const {addWishlistItem, removeWishlistItem, inWishlist} = useWishlist()
+
+  const myWishList = (myProduct) =>{
+    if(inWishlist(myProduct.id)){
+      removeWishlistItem(myProduct.id)
+    }else{
+      addWishlistItem(myProduct)
+    }
+  }
+ 
 
   return (
     <>
@@ -23,7 +32,7 @@ const FruitsCategory = () => {
                     <div className="image">
                       <img src={item.image} alt="" />
                       <div className="i-con">
-                        <button onClick={()=> addWishlistItem(item)}>Add</button>
+                        <i className={inWishlist(item.id)? "fa-solid fa-heart" : "fa-regular fa-heart"} onClick={()=> myWishList(item)}></i>
                         <i className="fa-solid fa-right-left"></i>
                         <NavLink to={`/details/${context.data.id}`}>
                           Details

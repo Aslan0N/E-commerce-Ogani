@@ -14,7 +14,7 @@ const Cards = () => {
                 <div className="row">
                   <div className="col-12 col-sm-12 col-md-12 col-lg-12">
                     <form>
-                      <input type="text" placeholder={t("form.3")} />
+                      <input type="text" placeholder={t("vegetable.form.2")} />
                       <i className="fa-solid fa-search"></i>
                     </form>
                   </div>
