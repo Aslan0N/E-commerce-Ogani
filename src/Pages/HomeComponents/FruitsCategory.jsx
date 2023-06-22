@@ -34,7 +34,7 @@ const FruitsCategory = () => {
                       <div className="i-con">
                         <i className={inWishlist(item.id)? "fa-solid fa-heart" : "fa-regular fa-heart"} onClick={()=> myWishList(item)}></i>
                         <i className="fa-solid fa-right-left"></i>
-                        <NavLink to={`/details/${context.data.id}`}>
+                        <NavLink to={`/details/${item.id}`}>
                           Details
                         </NavLink>
                         <i

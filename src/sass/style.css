@@ -293,6 +293,11 @@ header .header-con .header-bottom .item .items .fa-bag-shopping {
     display: block;
   }
 }
+@media (min-width: 990px) {
+  .header-con2 {
+    transform: translatex(-100%) !important;
+  }
+}
 #vegetable {
   width: 100%;
   height: auto;

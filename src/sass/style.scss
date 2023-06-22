@@ -308,6 +308,12 @@ header {
   }
 }
 
+@media(min-width:990px){
+    .header-con2{
+      transform: translatex(-100%) !important;
+    }
+}
+
 // Secion Vegetable
 
 #vegetable {

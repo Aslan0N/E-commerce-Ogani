@@ -153,7 +153,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-
+   {/* ====================================================================================== */}
       <div className={!opn ? "header-con2" : "header-con2 transform-none"}>
         <div className="logo">
           <img
@@ -180,7 +180,6 @@ const Header = () => {
             Login
           </div>
         </div>
-
         <div className={context.isOpen ? "nav-menu opn" : "nav-menu"}>
           <button onClick={context.toggleMenu}>
             MENU<i className="fa-solid fa-bars"></i>

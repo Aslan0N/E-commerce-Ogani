@@ -14,6 +14,9 @@ import AllProducts from "../Pages/AllProducts";
 import { GlobalTheme } from "../Context/GlobalTheme";
 import Details from "../Pages/Details";
 import WishList from "../Pages/WishList";
+import PrivateRoute from "../Routes/PrivateRoute";
+import Admin from "../Pages/Admin";
+import Login from "../Pages/Login";
 
 const AppRouter = () => {
   const { darkMode } = useContext(GlobalTheme);
@@ -39,6 +42,10 @@ const AppRouter = () => {
               <Route path="/all" element={<AllProducts />} />
               <Route path="/details/:id" element={<Details />} />
               <Route path="/wishlist" element={<WishList />} />
+              <Route path="/login" element={<Login/>} />
+              <Route element={<PrivateRoute/>}>
+                <Route path="/admin" element={<Admin />} />
+              </Route>
             </Routes>
             <Footer />
           </BrowserRouter>

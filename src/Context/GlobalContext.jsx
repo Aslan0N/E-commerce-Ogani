@@ -1,13 +1,10 @@
 import { createContext, useState } from "react";
 import Fruits from "../Data/FruitsData.json";
-import { useTranslation } from "react-i18next";
-import axios from "axios";
 
 export const GlobalContext = createContext();
 
 export const ContextProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsOpen((value) => !value);
@@ -30,15 +27,12 @@ export const ContextProvider = ({ children }) => {
     setData(filtered);
   };
 
-  const [detailData, setDetailData] = useState([]);
 
-  axios
-    .get("https://fakestoreapi.com/products")
-    .then((res) => setDetailData(res.data));
+ 
 
   return (
     <GlobalContext.Provider
-      value={{ isOpen, toggleMenu, data, myFilter, category, detailData }}
+      value={{ isOpen, toggleMenu, data, myFilter, category, setCategory }}
     >
       {children}
     </GlobalContext.Provider>
