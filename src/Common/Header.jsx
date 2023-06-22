@@ -6,6 +6,7 @@ import { useCart } from "react-use-cart";
 import { GlobalTheme } from "../Context/GlobalTheme";
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
+import AuthBtn from "../Components/AuthBtn";
 
 const Header = () => {
   const context = useContext(GlobalContext);
@@ -121,6 +122,9 @@ const Header = () => {
                       <NavLink className={"text-none"}>WishList</NavLink>
                     </LinkContainer>
                   </li>
+                  <li>
+                      <AuthBtn/>
+                  </li>
                 </ul>
               </nav>
               <div className="items">
@@ -129,6 +133,7 @@ const Header = () => {
                     <i className="fa-solid fa-search"></i>
                   </NavLink>
                 </LinkContainer>
+
                 <LinkContainer to={"/basket"}>
                   <NavLink className={"text-none"}>
                     <i className="fa-solid fa-bag-shopping">
@@ -145,6 +150,7 @@ const Header = () => {
                     </i>
                   </NavLink>
                 </LinkContainer>
+
                 <p>
                   item: <b>$150.00</b>
                 </p>
@@ -153,7 +159,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-   {/* ====================================================================================== */}
+      {/* ====================================================================================== */}
       <div className={!opn ? "header-con2" : "header-con2 transform-none"}>
         <div className="logo">
           <img

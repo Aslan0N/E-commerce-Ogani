@@ -33,9 +33,8 @@ const FruitsCategory = () => {
                       <img src={item.image} alt="" />
                       <div className="i-con">
                         <i className={inWishlist(item.id)? "fa-solid fa-heart" : "fa-regular fa-heart"} onClick={()=> myWishList(item)}></i>
-                        <i className="fa-solid fa-right-left"></i>
                         <NavLink to={`/details/${item.id}`}>
-                          Details
+                        <i className="fa-solid fa-right-left"></i>
                         </NavLink>
                         <i
                           className="fa-solid fa-cart-shopping"

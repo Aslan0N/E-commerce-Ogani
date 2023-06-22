@@ -14,8 +14,8 @@ import AllProducts from "../Pages/AllProducts";
 import { GlobalTheme } from "../Context/GlobalTheme";
 import Details from "../Pages/Details";
 import WishList from "../Pages/WishList";
-import PrivateRoute from "../Routes/PrivateRoute";
 import Admin from "../Pages/Admin";
+import PrivateRoute from "../Routes/PrivateRoute";
 import Login from "../Pages/Login";
 
 const AppRouter = () => {
@@ -43,8 +43,8 @@ const AppRouter = () => {
               <Route path="/details/:id" element={<Details />} />
               <Route path="/wishlist" element={<WishList />} />
               <Route path="/login" element={<Login/>} />
-              <Route element={<PrivateRoute/>}>
-                <Route path="/admin" element={<Admin />} />
+              <Route element={<PrivateRoute/>} >
+                <Route path="/admin" element={<Admin/>}/>
               </Route>
             </Routes>
             <Footer />

@@ -10,6 +10,7 @@ const Basket = () => {
          <i className="fa-solid fa-check"></i>
        </section>
     ) 
+    
     return (
         <>
       <section id="basket">
