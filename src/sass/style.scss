@@ -152,7 +152,7 @@ header {
         justify-content: space-between;
         align-items: center;
         nav {
-          width: 40%;
+          width: 50%;
           height: 100%;
 
           ul {
@@ -163,6 +163,7 @@ header {
             align-items: center;
             li {
               font-weight: 700;
+              cursor: pointer;
             }
             .text-none {
               text-decoration: none;

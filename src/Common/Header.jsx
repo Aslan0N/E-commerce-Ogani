@@ -124,6 +124,7 @@ const Header = () => {
                   </li>
                   <li>
                       <AuthBtn/>
+                      
                   </li>
                 </ul>
               </nav>

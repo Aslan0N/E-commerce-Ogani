@@ -16,8 +16,7 @@ const AuthBtn = () => {
             {data.userName}
             <ul className="dropdown-menu">
               <li onClick={logOut}>LogOut</li>
-              <li>Another action</li>
-              <li>Something else here</li>
+             
             </ul>
           </div>
         </div>

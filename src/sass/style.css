@@ -150,7 +150,7 @@ header .header-con .header-bottom .item {
   align-items: center;
 }
 header .header-con .header-bottom .item nav {
-  width: 40%;
+  width: 50%;
   height: 100%;
 }
 header .header-con .header-bottom .item nav ul {
@@ -162,6 +162,7 @@ header .header-con .header-bottom .item nav ul {
 }
 header .header-con .header-bottom .item nav ul li {
   font-weight: 700;
+  cursor: pointer;
 }
 header .header-con .header-bottom .item nav ul .text-none {
   text-decoration: none;
